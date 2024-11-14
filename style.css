@@ -28,6 +28,7 @@ footer {
 .negocio {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: black;
