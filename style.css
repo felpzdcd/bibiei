@@ -141,6 +141,7 @@ main {
 
 .rodape {
     padding: 1.5rem;
+    width: 100%;
     color: white;
     background-color: green;
     font-family: 'Montserrat', sans-serif;
