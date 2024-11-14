@@ -148,8 +148,11 @@ main {
 }
 
 .cabecalho {
-    padding: 2%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .cabecalho__logo {
@@ -167,10 +170,9 @@ main {
 
 .cabecalho__menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
-    padding: 10px;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .cabecalho__menu__link {
