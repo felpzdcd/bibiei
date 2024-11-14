@@ -10,20 +10,24 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background: var(--cor-principal);
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer {
     background: black;
     color: white;
     text-align: center;
+    padding: 1rem;
 }
 
 .negocio {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: black;
@@ -32,194 +36,211 @@ footer {
 
 .negocio__historia {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: var(--cor-principal);
-    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
 }
 
 #centro {
     text-align: center;
 }
 
-.verde-front {
-    color: green;
-}
-
 header {
     background: var(--cor-principal);
-    color: var(--cor-secundaria)
+    color: var(--cor-secundaria);
+    padding: 1rem;
 }
 
 main {
     background: var(--cor-principal);
     color: var(--cor-secundaria);
     padding: 0.625rem;
-    font-family: 'Montserrat', sans-serif;
 }
 
-#fotominha {
+#fotominha, #bibiei {
     display: block;
-    margin: 0 auto; /* Centraliza horizontalmente a imagem */
-    width: 21.875rem;
-    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 21.875rem;
+    height: auto;
 }
-
-#bibiei {
-    display: block;
-    margin: 0 auto; /* Centraliza horizontalmente a imagem */
-    width: 28.125rem;
-    height: auto; /* Mantém a proporção da imagem */
-}    
 
 .botao-verde {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     width: 75%;
+    max-width: 15rem;
     text-align: center;
     border: 0.125rem solid green;
     border-radius: 0.5rem;
     font-size: 1.5rem;
-    font-weight: 37.5rem;
-    padding: 1.34375rem 0;
+    font-weight: 600;
+    padding: 1rem;
     text-decoration: none;
     color: white;
-    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s;
 }
 
-.botao-verde:hover{
+.botao-verde:hover {
     background-color: green;
-    padding: 3%;
     cursor: pointer;
 }
 
 .botoes-centro {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 2rem; 
-}
-
-.botoes-centro-att {
-    font-family: "Krona One", sans-serif;
-    font-weight: 25rem;
-    font-size: 1.5rem;
+    gap: 2rem;
 }
 
 .negocio__texto {
-    width: 50%;
+    width: 100%;
+    max-width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 2.5rem;
     color: white;
-}
-
-.negocio__texto__historia {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    color:var(--cor-secundaria);
-    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
 }
 
 .negocio__texto__titulo {
     font-size: 2.25rem;
-    font-family: "Krona One", sans-serif ;
+    font-family: "Krona One", sans-serif;
     color: white;
+    text-align: center;
 }
 
 .negocio__texto__paragrafo {
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
     color: white;
+    text-align: center;
 }
 
 .rodape {
     padding: 1.5rem;
     color: white;
     background-color: green;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 2%;
+    text-align: center;
 }
 
 .cabecalho__menu {
     display: flex;
-    padding: 10px;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 0.5rem ;
-    font-family: 'Montserrat', sans-serif;
+    gap: 1rem;
+    padding: 10px;
 }
 
 .cabecalho__menu__link {
     color: var(--cor-secundaria);
-    font-size: 1.125rem;
-    margin: 0 0.625rem;
-    padding: 0.3125rem 0.625rem;
+    font-size: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
 }
 
 .cabecalho__menu__link:hover {
     color: white;
-    font-size: 1.5rem;
-}
-
-.foto__historia {
-    display: block;
-    margin: 0 auto; /* Centraliza horizontalmente a imagem */
-    width: 21.875rem;
-    height: auto; /* Mantém a proporção da imagem */
 }
 
 .mapa__loja__print {
     display: block;
-    margin: 0 auto; /* Centraliza horizontalmente a imagem */
-    width: 15.625rem;
-    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 15.625rem;
+    height: auto;
     border-radius: 0.5rem;
     border: 0.125rem solid var(--cor-secundaria);
     padding: 0.625rem;
 }
 
 .mapa__loja__print:hover {
-    width: 31.25rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
 .mapa__loja {
     display: flex;
     justify-content: center;
-    text-decoration: none;
     color: var(--cor-secundaria);
-}
-
-.imagem__rem {
-    width: 50%;
 }
 
 @media (max-width: 1200px) {
     .cabecalho {
         padding: 10%;
     }
-    
-    .cabecalho__menu {
-        justify-content: center;
-    }
-    
+
     .negocio {
-        flex-direction: column-reverse;
-        padding: 5%;
+        flex-direction: column;
+        padding: 2rem;
     }
 
     .negocio__texto {
-        width: auto;
+        width: 100%;
+    }
+
+    .negocio__texto__titulo {
+        font-size: 1.75rem;
+    }
+
+    .botao-verde {
+        width: 100%;
+        max-width: 10rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #fotominha, #bibiei {
+        max-width: 15rem;
+    }
+
+    .botao-verde {
+        width: 100%;
+        max-width: 8rem;
+        font-size: 1.25rem;
+    }
+
+    .negocio__texto__titulo {
+        font-size: 1.5rem;
+    }
+
+    .negocio__texto__paragrafo {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .negocio {
+        padding: 1rem;
+    }
+
+    .negocio__texto__titulo {
+        font-size: 1.25rem;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 0.875rem;
+    }
+
+    .botao-verde {
+        font-size: 1rem;
+        padding: 0.75rem;
     }
 }
