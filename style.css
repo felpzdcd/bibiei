@@ -70,15 +70,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cabecalho__logo {
-    width: 250px;
+    width: 180px; 
     height: auto;
 }
 
 .cabecalho__menu {
-    display: flex;
+display: flex;
     gap: 1rem;
     flex-grow: 1;
     justify-content: center;
@@ -222,6 +223,25 @@ main {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Colocar logo e menu em uma coluna */
+        text-align: center;
+    }
+
+    .cabecalho__logo {
+        width: 140px; /* Ajuste do tamanho do logotipo em telas médias */
+    }
+
+    .cabecalho__menu {
+        flex-direction: column; /* Menu em coluna para mais espaço */
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 0.9rem; /* Reduzir tamanho da fonte do menu */
+    }
+    
     #fotominha, #bibiei {
         max-width: 15rem;
     }
@@ -246,6 +266,19 @@ main {
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .cabecalho__logo {
+        width: 120px; /* Tamanho menor do logotipo para smartphones */
+    }
+
+    .cabecalho__menu__link {
+        font-size: 0.8rem; /* Fonte menor para smartphones */
+        padding: 0.25rem; /* Menor padding para links do menu */
+    }
+    
     .negocio {
         padding: 1rem;
     }
