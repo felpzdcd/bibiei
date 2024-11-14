@@ -42,6 +42,10 @@ footer {
     background-color: #FFFFFF;
     padding: 1rem;
 }
+.negocio__historia:hover {
+    border-radius: 0.5rem
+    font-weight: 600px
+}
 
 #centro {
     text-align: center;
