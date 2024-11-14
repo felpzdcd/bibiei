@@ -151,12 +151,12 @@ main {
 
 .cabecalho {
     padding: 2% 0% 0% 15%;
-    width: 75%;
+    width: 20%;
 }
 
 .cabecalho__menu {
     display: flex;
-    width: 75%;
+    width: 20%;
     padding: 10px;
     justify-content: center;
     align-items: center;
