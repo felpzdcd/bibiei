@@ -39,7 +39,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-principal);
+    background-color: #FFFFFF;
     padding: 1rem;
 }
 
