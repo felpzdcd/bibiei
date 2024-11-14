@@ -152,6 +152,19 @@ main {
     text-align: center;
 }
 
+.cabecalho__logo {
+    width: 50px; /* Ajuste conforme o tamanho desejado */
+    height: auto;
+}
+
+.cabecalho__logo--esquerda {
+    margin-right: auto; /* Move a logo para o lado esquerdo */
+}
+
+.cabecalho__logo--direita {
+    margin-left: auto; /* Move a logo para o lado direito */
+}
+
 .cabecalho__menu {
     display: flex;
     flex-wrap: wrap;
