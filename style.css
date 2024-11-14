@@ -48,6 +48,16 @@ footer {
     font-weight: 600px;
 }
 
+.negocio__texto__historia {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    color:var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 #centro {
     text-align: center;
 }
