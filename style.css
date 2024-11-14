@@ -103,6 +103,7 @@ main {
 .botao-verde:hover {
     background-color: green;
     cursor: pointer;
+    width: 200%;
 }
 
 .botoes-centro {
