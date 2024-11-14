@@ -54,7 +54,7 @@ header {
 }
 
 main {
-    background: var(--cor-principal);
+    background: #FFFFFF;
     color: var(--cor-secundaria);
     padding: 0.625rem;
 }
